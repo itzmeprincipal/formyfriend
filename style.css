@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    background-color: #dfd6f5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 9;
+}
+
+.buttons {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    padding: 2vh 4vw;
+    border: none;
+    border-radius: 2.5vw;
+    background-color: #0095ff;
+    color: #fff;
+    font-size: 4vw;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #006eff;
+    transition-duration: 0.3s;
+}
+
+@media screen and (orientation: landscape) {
+    .centered {
+        margin: min(2.5vw, 2.5vh);
+        border: min(1.25vw, 1.25vh) solid #ccc;
+    }
+
+    .buttons {
+        gap: min(2.5vw, 2.5vh);
+    }
+
+    button {
+        padding: 1vh 2vw;
+        border-radius: 1.25vh;
+        font-size: min(2.5vh, 2.5vw);
+    }
+
+    h1 {
+        font-size: min(2vw, 2vh);
+    }
+
+    img {
+        width: min(22.5vh, 22.5vw);
+        height: min(22.5vh, 22.5vw);
+        object-fit: cover;
+        image-rendering: optimizeSpeed;
+    }
+}
+
+#loading {
+    background-color: aliceblue;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: min(9vh, 9vw);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (orientation: portrait) {
+    .centered {
+        margin: min(5vh, 5vw);
+        border: min(2.5vw, 2.5vh) solid #ccc;
+    }
+
+    .buttons {
+        gap: min(5vh, 5vw);
+    }
+
+    button {
+        padding: 2vh 4vw;
+        border-radius: 2.5vw;
+        font-size: min(4vh, 4vw);
+    }
+
+    h1 {
+        font-size: min(3.5vw, 3.5vh);
+    }
+
+    img {
+        width: min(35vh, 35vw);
+        height: min(35vw, 35vw);
+        object-fit: cover;
+        image-rendering: optimizeSpeed;
+    }
+}
