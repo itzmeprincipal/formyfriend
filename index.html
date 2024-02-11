@@ -143,12 +143,17 @@ video {
 </div>
 <div  style="position: relative;">
   
-  <div id="heart">
-      <a href="index3.html" style="text-decoration:none"><h3 style="position: relative; text-align: center;z-index: 1100; color: white;"><br>
+  <div id="heart"  style="visibility:hidden;">
+      <a href="index3.html" style="text-decoration:none" id="main_action"><h3 style="position: relative; text-align: center;z-index: 1100; color: white;"><br>
     Click<br>Me!<h3></a>
   </div>
 </div>
+<script>
+  setTimeout(function(){
+document.getElementById('heart').style.visibility = "visible";
+},19000);
 
+</script>
 
 <!-- <script>
   let allVids = $("#myCarousel").find('.carousel-item');
