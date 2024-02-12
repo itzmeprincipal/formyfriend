@@ -86,19 +86,19 @@ function drawText() {
     context.textAlign = "center";
     
     // glow effect
-    context.shadowColor = "rgba(45, 45, 255, 1)";
+    context.shadowColor = "rgba(255, 255, 255, 1)";
     context.shadowBlur = 8;
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
     if(frameNumber < 125){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 125 && frameNumber < 250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -108,7 +108,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 250 && frameNumber < 375){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {           //shortens long sentence for mobile screens
             drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -119,7 +119,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 375 && frameNumber < 500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         
         if (window.innerWidth < 1000) {
             drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -134,12 +134,12 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 500 && frameNumber < 625){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 625 && frameNumber < 750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -148,12 +148,12 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 750 && frameNumber < 875){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 875 && frameNumber < 1000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -162,7 +162,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1000 && frameNumber < 1125){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
             drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -173,7 +173,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1125 && frameNumber < 1250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
             drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -188,7 +188,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1250 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
             drawTextWithLineBreaks(["I love you so much Suryanshi, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -200,7 +200,7 @@ function drawText() {
     }
     
     if(frameNumber >= 1375 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
 
 
         if (window.innerWidth < 1000) {
@@ -213,7 +213,7 @@ function drawText() {
     }
 
     if(frameNumber >= 1500 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
+        context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
         context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
