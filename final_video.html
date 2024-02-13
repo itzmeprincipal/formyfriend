@@ -83,7 +83,7 @@ body {
         }
 </style>
 </head>
-<body>
+<body onload="validate_onload();">
 
 <video autoplay loop id="myVideo">
   <source src="images/main_final.mp4" type="video/mp4">
@@ -109,6 +109,19 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+function validate_onload(){
+      let x = sessionStorage.getItem("main_validate");
+    if (x == "") {
+      location.replace("index.html");
+    }
+    else if(x != "vaibhav123"){
+      location.replace("index.html");
+
+return false;
+    }else{
+
+    }
+    }
 </script>
 
 <a href="index.html"><i class="fa fa-home br-icon"></i></a>

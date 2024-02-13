@@ -47,7 +47,7 @@
     </style>
 </head>
 
-<body>
+<body onload="validate_onload();">
     <section id="loading">loading...</section>
     <div class="container">
         <img src="" id="pic" class="centered">
@@ -57,6 +57,21 @@
             <button id="no" class="button">No</button>
         </div>
     </div>
+    <script>
+          function validate_onload(){
+      let x = sessionStorage.getItem("main_validate");
+    if (x == "") {
+      location.replace("index.html");
+    }
+    else if(x != "vaibhav123"){
+      location.replace("index.html");
+
+return false;
+    }else{
+
+    }
+    }
+    </script>
 <a href="index.html"><i class="fa fa-home br-icon"></i></a>
 </body>
 

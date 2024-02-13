@@ -43,12 +43,29 @@
         }
     </style>
   </head>
-  <body>
+  <body onload="validate_onload();">
     <canvas id="starfield"></canvas>
     <button id="valentinesButton"  class="btn">Click Me! ❤</button>
     <script src="script.js"></script>
-  
+  <audio id="audio2" autoplay  src="music/good_enough.mp3">
+
+  </audio>
   
   <a href="index.html"><i class="fa fa-home br-icon"></i></a>
+  <script>
+    function validate_onload(){
+      let x = sessionStorage.getItem("main_validate");
+    if (x == "") {
+      location.replace("index.html");
+    }
+    else if(x != "vaibhav123"){
+      location.replace("index.html");
+
+return false;
+    }else{
+
+    }
+    }
+  </script>
 </body>
 </html>

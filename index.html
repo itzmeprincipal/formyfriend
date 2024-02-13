@@ -173,9 +173,9 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden;
-   margin-left: -20px;
-  margin-right: -20px;
+  margin: -20px;
   margin-top: -200px;
+
 }
 
 .box {
@@ -186,7 +186,7 @@ body {
 	height: 40%;
 	transform: translate(-50%, -50%);
   background: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow: hidden;
 	box-shadow: 0 0 1.5rem rgba(0, 0, 0, .5);
 	font-size: 1.3rem;
@@ -212,7 +212,7 @@ body {
   margin: 0;
   top: 15px;
   right: 15px;
-  color: fade-out(#fff, .3);
+  color: fade-out(#ffffff, .3);
 }
 
 .quote {
@@ -395,13 +395,10 @@ input {
       </div>
       <p class="number">3</p>
       <i class="start-quote fas fa-quote-left"></i>
-      <p class="quote">I have no special talent. I am only passionately curious.</p>
+      <p class="quote">Here is a Special Message for You! Click Below</p>
       <!-- <p class="credit">Albert Einstein</p> -->
-      
       <label class="button" for="card-one">
-        
-      <a href="index3.html">
-<p>next</p></a>
+        <a data-toggle="modal" data-target="#myModal" type="button"> <p>Open</p></a>
       </label>
     </div>
   </div>
@@ -430,7 +427,60 @@ document.getElementById('heart').style.visibility = "visible";
 },14000);
 
 </script> -->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Unlock Message</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form name="myForm" action="index3.html" onsubmit="return validateForm()" method="post">
+          <div class="row">
+            <div class="col">
+              <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="submit" class="btn btn-success" title="Submit">
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  function validateForm() {
+    let x = document.forms["myForm"]["pswd"].value;
+    if (x == "") {
+      alert("Password Can't be empty");
+      return false;
+    }
+    else if(x != "vaibhav123"){
+      alert("Password is InCorrect");
 
-<a href="index.html"><i class="fa fa-home br-icon"></i></a>
+return false;
+    }else{
+
+      sessionStorage.setItem("main_validate", x);
+
+    }
+  }
+  </script>
 </body>
 </html>
