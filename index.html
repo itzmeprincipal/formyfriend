@@ -174,7 +174,7 @@ body {
   transition: 1s;
   visibility: hidden;
   margin: -20px;
-  margin-top: -200px;
+  margin-top: -300px;
 
 }
 
@@ -313,7 +313,7 @@ input {
         }
 </style>
 </head>
-<body class="bg">
+<body class="bg" >
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="flase"  data-wrap="false">
   <!-- <ol class="carousel-indicators">
@@ -366,7 +366,7 @@ input {
       <p class="number">1</p>
 			<div class="text">
 				<i class="start-quote fas fa-quote-left"></i>
-				<p class="quote">Develop a passion for learning. If you do, you will never cease to grow.</p>
+				<p class="quote">I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more.</p>
 				<!-- <p class="credit">Anthony J. D'Angelo</p> -->
 			</div>
       <label class="button" for="card-two">
@@ -381,7 +381,7 @@ input {
       </div>
       <p class="number">2</p>
       <i class="start-quote fas fa-quote-left"></i>
-      <p class="quote">An investment in knowledge pays the best interest.</p>
+      <p class="quote">If one day the moon calls you by your name don't be surprised, because every night I tell her about you.</p>
       <!-- <p class="credit"> Benjamin Franklin</p> -->
       <label class="button" for="card-three">
         <p>next</p>
@@ -440,7 +440,7 @@ document.getElementById('heart').style.visibility = "visible";
       
       <!-- Modal body -->
       <div class="modal-body">
-        <form name="myForm" action="index3.html" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="index3.html" onsubmit="return validateForm()" method="get">
           <div class="row">
             <div class="col">
               <input type="password" class="form-control" placeholder="Enter password" name="pswd">
@@ -464,10 +464,12 @@ document.getElementById('heart').style.visibility = "visible";
     </div>
   </div>
 </div>
-<script>
-  function validateForm() {
-    let x = document.forms["myForm"]["pswd"].value;
-    if (x == "") {
+ <script>
+
+function validateForm() {
+
+  let x = document.forms["myForm"]["pswd"].value;
+  if (x == "") {
       alert("Password Can't be empty");
       return false;
     }
@@ -476,11 +478,15 @@ document.getElementById('heart').style.visibility = "visible";
 
 return false;
     }else{
+      localStorage.setItem("main_validate", x).submit();
 
-      localStorage.setItem("main_validate", x);
 
-    }
-  }
+    } 
+
+
+}
+
+
   </script>
 </body>
 </html>
