@@ -193,9 +193,9 @@ function drawText() {
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
-            drawTextWithLineBreaks(["Very Very Happy Birthday, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Very Very Happy Birthday Siya, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Very Very Happy Birthday, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("Very Very Happy Birthday Siya, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -216,7 +216,7 @@ function drawText() {
 
     if(frameNumber >= 1500 && frameNumber < 99999){
         context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
-        context.fillText("Happy Birthday Day <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Happy Birthday Day, Hina <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
