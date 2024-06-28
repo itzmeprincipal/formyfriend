@@ -193,7 +193,7 @@ function drawText() {
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
-            drawTextWithLineBreaks(["Very Very Happy Birthday Siya, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Very Very Happy Birthday Siya, more than", "all the time and space in the","universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
             context.fillText("Very Very Happy Birthday Siya, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
         }
