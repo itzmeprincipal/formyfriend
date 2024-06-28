@@ -206,9 +206,9 @@ function drawText() {
 
 
         if (window.innerWidth < 1000) {
-            drawTextWithLineBreaks(["and You will get whatever you desire ", "never doubt yourself!"], canvas.width / 2, (canvas.height/2 + 70), fontSize, lineHeight);
+            drawTextWithLineBreaks(["and You will get whatever you desire ", "never doubt yourself!"], canvas.width / 2, (canvas.height/2 + 80), fontSize, lineHeight);
         } else {
-            context.fillText("and You will get whatever you desire never doubt yourself!", canvas.width/2, (canvas.height/2 + 60));
+            context.fillText("and You will get whatever you desire never doubt yourself!", canvas.width/2, (canvas.height/2 + 70));
         }
 
         secondOpacity = secondOpacity + 0.01;
@@ -216,7 +216,7 @@ function drawText() {
 
     if(frameNumber >= 1800 && frameNumber < 99999){
         context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
-        context.fillText("Happy Birthday Day, Hina <3", canvas.width/2, (canvas.height/2 + 130));
+        context.fillText("Happy Birthday Day, Hina <3", canvas.width/2, (canvas.height/2 + 140));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
