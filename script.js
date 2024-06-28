@@ -135,12 +135,14 @@ function drawText() {
     }
     if(frameNumber > 500 && frameNumber < 625){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
+        drawTextWithLineBreaks(["to be alive, and to get to spend this life with"," you as my friend"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+        //context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 625 && frameNumber < 750){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
+        drawTextWithLineBreaks(["to be alive, and to get to spend this life with"," you as my friend"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+        //context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
