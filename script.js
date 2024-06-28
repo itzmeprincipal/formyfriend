@@ -107,7 +107,7 @@ function drawText() {
     if(frameNumber == 250){
         opacity = 0;
     }
-    if(frameNumber > 250 && frameNumber < 375){
+    if(frameNumber > 250 && frameNumber < 400){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {           //shortens long sentence for mobile screens
@@ -118,7 +118,7 @@ function drawText() {
 
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 375 && frameNumber < 500){
+    if(frameNumber >= 400 && frameNumber < 525){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         
         if (window.innerWidth < 1000) {
@@ -130,40 +130,40 @@ function drawText() {
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 500){
+    if(frameNumber == 525){
         opacity = 0;
     }
-    if(frameNumber > 500 && frameNumber < 625){
+    if(frameNumber > 525 && frameNumber < 650){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         drawTextWithLineBreaks(["to be alive, and to get to spend this life with"," you as my friend"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         //context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 625 && frameNumber < 750){
+    if(frameNumber >= 650 && frameNumber < 775){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         drawTextWithLineBreaks(["to be alive, and to get to spend this life with"," you as my friend"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         //context.fillText("to be alive, and to get to spend this life with"," you as my friend", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 750){
+    if(frameNumber == 775){
         opacity = 0;
     }
-    if(frameNumber > 750 && frameNumber < 875){
+    if(frameNumber > 775 && frameNumber < 900){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 875 && frameNumber < 1000){
+    if(frameNumber >= 900 && frameNumber < 1025){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 1000){
+    if(frameNumber == 1025){
         opacity = 0;
     }
-    if(frameNumber > 1000 && frameNumber < 1125){
+    if(frameNumber > 1025 && frameNumber < 1150){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
@@ -174,7 +174,7 @@ function drawText() {
 
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 1125 && frameNumber < 1250){
+    if(frameNumber >= 1150 && frameNumber < 1275){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
@@ -186,10 +186,10 @@ function drawText() {
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 1250){
+    if(frameNumber == 1275){
         opacity = 0;
     }
-    if(frameNumber > 1250 && frameNumber < 99999){
+    if(frameNumber > 1275 && frameNumber < 99999){
         context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
         if (window.innerWidth < 1000) {
@@ -201,7 +201,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     
-    if(frameNumber >= 1375 && frameNumber < 99999){
+    if(frameNumber >= 1450 && frameNumber < 99999){
         context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
 
 
@@ -214,7 +214,7 @@ function drawText() {
         secondOpacity = secondOpacity + 0.01;
     }
 
-    if(frameNumber >= 1500 && frameNumber < 99999){
+    if(frameNumber >= 1800 && frameNumber < 99999){
         context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
         context.fillText("Happy Birthday Day, Hina <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
